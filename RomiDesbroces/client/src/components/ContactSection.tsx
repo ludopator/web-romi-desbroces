@@ -151,11 +151,11 @@ export default function ContactSection() {
                   <div>
                     <h3 className="text-lg font-semibold mb-1" data-testid="text-phone-title">Teléfono</h3>
                     <a 
-                      href="tel:+34600123456" 
+                      href="tel:+34644494617" 
                       className="text-muted-foreground hover:text-primary transition-colors"
                       data-testid="link-phone"
                     >
-                      +34 600 123 456
+                      +34 644 49 46 17
                     </a>
                     <p className="text-sm text-muted-foreground mt-2">
                       Horario: Lunes a Viernes 8:00 - 18:00
