@@ -1,5 +1,6 @@
 import { Mail, Phone, MapPin } from "lucide-react";
 import { SiFacebook, SiInstagram, SiLinkedin } from "react-icons/si";
+import { Link } from "wouter";
 import logoImage from "@assets/generated_images/romi_desbroces_company_logo.png";
 
 export default function Footer() {
@@ -141,20 +142,20 @@ export default function Footer() {
               </div>
               
               <div className="flex gap-4 text-sm">
-                <a 
-                  href="#" 
+                <Link 
+                  href="/aviso-legal" 
                   className="text-background/80 hover:text-background transition-colors"
                   data-testid="link-legal"
                 >
                   Aviso Legal
-                </a>
-                <a 
-                  href="#" 
+                </Link>
+                <Link 
+                  href="/privacidad" 
                   className="text-background/80 hover:text-background transition-colors"
                   data-testid="link-privacy"
                 >
                   Privacidad
-                </a>
+                </Link>
               </div>
             </div>
           </div>
