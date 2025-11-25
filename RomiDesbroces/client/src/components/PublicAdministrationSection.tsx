@@ -31,7 +31,7 @@ const services = [
   {
     icon: FileCheck,
     title: "Contratos de mantenimiento periódico",
-    description: "Campañas anuales o por temporada adaptadas a las necesidades del municipio"
+    description: "Campañas anuales o por temporada adaptadas a las necesidades del cliente"
   }
 ];
 
@@ -39,7 +39,7 @@ const certifications = [
   {
     icon: FileCheck,
     title: "Experiencia desde 2004",
-    description: "Más de 20 años prestando servicios a Ayuntamientos y Administraciones"
+    description: "Más de 20 años prestando servicios a empresas y administraciones"
   },
   {
     icon: FileCheck,
@@ -73,15 +73,15 @@ export default function PublicAdministrationSection() {
         <div className="text-center mb-12">
           <div className="inline-flex items-center gap-2 bg-primary-foreground/10 px-4 py-2 rounded-md mb-4">
             <Building2 className="h-5 w-5" />
-            <span className="text-sm font-semibold uppercase tracking-wide">Sector Público</span>
+            <span className="text-sm font-semibold uppercase tracking-wide">Nuestros Clientes</span>
           </div>
           <h2 className="text-3xl sm:text-4xl font-bold mb-4" data-testid="text-admin-title">
-            Servicios para Ayuntamientos y Obras Públicas
+            Servicios para Empresas y Administraciones
           </h2>
           <p className="text-lg text-primary-foreground/90 max-w-3xl mx-auto mb-6">
-            En ROMI DESBROCES estamos especializados en el mantenimiento de carreteras y espacios públicos. 
-            Trabajamos con Ayuntamientos y Administraciones de toda España para mantener cunetas, márgenes 
-            de carretera y caminos rurales limpios y seguros.
+            En ROMI DESBROCES estamos especializados en el mantenimiento de carreteras, espacios públicos y terrenos privados. 
+            Trabajamos con empresas, comunidades de propietarios y administraciones de toda España para mantener cunetas, márgenes 
+            de carretera y caminos limpios y seguros.
           </p>
         </div>
 
@@ -136,32 +136,21 @@ export default function PublicAdministrationSection() {
 
         {/* CTA Section */}
         <div className="text-center mb-12">
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button 
-              size="lg"
-              variant="secondary"
-              onClick={scrollToContact}
-              data-testid="button-admin-proposal"
-            >
-              Solicita propuesta para tu municipio
-            </Button>
-            <Button 
-              size="lg"
-              variant="outline"
-              className="bg-transparent border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10"
-              onClick={scrollToContact}
-              data-testid="button-admin-download"
-            >
-              Descarga información para Administraciones Públicas
-            </Button>
-          </div>
+          <Button 
+            size="lg"
+            variant="secondary"
+            onClick={scrollToContact}
+            data-testid="button-admin-proposal"
+          >
+            Solicita presupuesto sin compromiso
+          </Button>
         </div>
 
         {/* Municipalities Section */}
         <div className="pt-8 border-t border-primary-foreground/20 text-center">
           <p className="text-lg text-primary-foreground/90 mb-6">
-            Trabajamos con Ayuntamientos y Administraciones de toda España, coordinando campañas de desbroce 
-            por temporada y adaptándonos a los planes de prevención de incendios de cada comunidad autónoma
+            Trabajamos con empresas y administraciones de toda España, coordinando campañas de desbroce 
+            por temporada y adaptándonos a las necesidades de cada cliente
           </p>
           <div className="flex flex-wrap justify-center gap-4 opacity-60">
             <div className="px-6 py-3 bg-primary-foreground/10 rounded-md text-sm font-medium">

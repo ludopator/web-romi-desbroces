@@ -34,7 +34,7 @@ export default function Navigation() {
               className="text-foreground hover:text-primary transition-colors font-semibold"
               data-testid="link-ayuntamientos"
             >
-              Ayuntamientos
+              Clientes
             </button>
             <button
               onClick={() => scrollToSection("servicios")}
@@ -87,7 +87,7 @@ export default function Navigation() {
                 className="text-foreground hover:text-primary transition-colors text-left px-2 font-semibold"
                 data-testid="link-ayuntamientos-mobile"
               >
-                Ayuntamientos
+                Clientes
               </button>
               <button
                 onClick={() => scrollToSection("servicios")}

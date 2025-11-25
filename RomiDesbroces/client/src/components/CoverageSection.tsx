@@ -10,8 +10,8 @@ export default function CoverageSection() {
             Cobertura y experiencia
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Trabajamos con Ayuntamientos y Administraciones de toda España, coordinando campañas de desbroce 
-            por temporada y adaptándonos a los planes de prevención de incendios de cada comunidad autónoma
+            Trabajamos con empresas y administraciones de toda España, coordinando campañas de desbroce 
+            por temporada y adaptándonos a las necesidades de cada cliente
           </p>
         </div>
 

@@ -41,7 +41,7 @@ export default function HeroSection() {
           className="hero-subtitle text-white/95 mb-6 sm:mb-8 leading-relaxed max-w-3xl mx-auto" 
           data-testid="text-hero-subtitle"
         >
-          Mantenimiento profesional de cunetas, márgenes de carretera, caminos rurales y zonas periurbanas. Prevención de incendios y seguridad vial para tu municipio.
+          Mantenimiento profesional de cunetas, márgenes de carretera, caminos rurales y fincas. Prevención de incendios y seguridad vial para empresas y administraciones.
         </p>
         <Button
           size="lg"
@@ -49,7 +49,7 @@ export default function HeroSection() {
           className="text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6 bg-primary/90 backdrop-blur-sm hover:bg-primary shadow-lg"
           data-testid="button-presupuesto-hero"
         >
-          Solicita propuesta para tu Ayuntamiento
+          Solicita presupuesto gratis
         </Button>
       </div>
     </section>
