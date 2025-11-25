@@ -21,7 +21,7 @@ export default function Footer() {
             <img 
               src={logoImage} 
               alt="ROMI DESBROCES" 
-              className="h-16 w-auto mb-4 brightness-0 invert"
+              className="h-16 w-auto mb-4 bg-white p-2 rounded"
               data-testid="img-footer-logo"
             />
             <p className="text-background/80 mb-4">
