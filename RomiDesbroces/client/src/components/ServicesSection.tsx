@@ -2,7 +2,6 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import tractorImage from "@assets/generated_images/tractor_clearing_service_card.png";
 import manualImage from "@assets/generated_images/manual_clearing_steep_terrain.png";
-import urbanImage from "@assets/generated_images/urban_lot_cleaning_service.png";
 import ruralImage from "@assets/generated_images/rural_road_maintenance_service.png";
 
 const services = [
@@ -10,7 +9,6 @@ const services = [
     image: ruralImage,
     title: "Desbroce de carreteras y cunetas",
     description: "Desbroce mecanizado de márgenes de carretera, cunetas y taludes. Mejoramos la visibilidad, reducimos el riesgo de incendio y mantenemos la vía en condiciones seguras.",
-    price: "desde 0,15€/m²",
     alt: "Desbroce de cunetas y márgenes de carretera",
     featured: true
   },
@@ -18,21 +16,12 @@ const services = [
     image: tractorImage,
     title: "Mantenimiento de caminos rurales y vías públicas",
     description: "Limpieza y acondicionamiento de caminos rurales, vías pecuarias y accesos a núcleos urbanos",
-    price: "Por metros lineales",
     alt: "Mantenimiento de caminos rurales"
-  },
-  {
-    image: urbanImage,
-    title: "Desbroce en zonas periurbanas y polígonos",
-    description: "Limpieza de vegetación en áreas industriales, polígonos y zonas de transición urbana",
-    price: "Desde 0,20€/m²",
-    alt: "Desbroce en polígonos industriales"
   },
   {
     image: manualImage,
     title: "Desbroce de fincas y parcelas",
     description: "Servicio adicional de limpieza de terrenos privados, fincas rústicas y parcelas",
-    price: "Presupuesto personalizado",
     alt: "Desbroce de fincas privadas",
     secondary: true
   }
@@ -87,11 +76,8 @@ export default function ServicesSection() {
                 <h3 className="text-xl font-semibold mb-2" data-testid={`text-service-title-${index}`}>
                   {service.title}
                 </h3>
-                <p className="text-muted-foreground mb-3" data-testid={`text-service-desc-${index}`}>
+                <p className="text-muted-foreground mb-4" data-testid={`text-service-desc-${index}`}>
                   {service.description}
-                </p>
-                <p className="text-primary font-semibold mb-4" data-testid={`text-service-price-${index}`}>
-                  {service.price}
                 </p>
                 <Button 
                   variant="outline" 
