@@ -15,10 +15,9 @@ export default function Privacidad() {
             <section>
               <h2 className="text-xl font-semibold text-foreground mb-4">1. Responsable del tratamiento</h2>
               <ul className="list-disc pl-6 space-y-2">
-                <li><strong>Identidad:</strong> ROMI DESBROCES [Actualizar con razón social]</li>
-                <li><strong>CIF/NIF:</strong> [Actualizar con CIF]</li>
-                <li><strong>Dirección:</strong> [Actualizar con dirección], Ciudad Real, España</li>
-                <li><strong>Email:</strong> info@romidesbroces.com [Actualizar]</li>
+                <li><strong>Identidad:</strong> ROMI DESBROCES</li>
+                <li><strong>Teléfono:</strong> +34 644 49 46 17</li>
+                <li><strong>Email:</strong> info@romidesbroces.com</li>
               </ul>
             </section>
 
@@ -87,7 +86,7 @@ export default function Privacidad() {
                 <li><strong>Portabilidad:</strong> Recibir tus datos en un formato estructurado.</li>
               </ul>
               <p className="mt-4">
-                Para ejercer estos derechos, puedes contactarnos en: info@romidesbroces.com [Actualizar]
+                Para ejercer estos derechos, puedes contactarnos en: info@romidesbroces.com
               </p>
               <p className="mt-4">
                 También tienes derecho a presentar una reclamación ante la Agencia Española de Protección de Datos (www.aepd.es).
@@ -98,12 +97,6 @@ export default function Privacidad() {
               <h2 className="text-xl font-semibold text-foreground mb-4">8. Seguridad</h2>
               <p>
                 ROMI DESBROCES ha adoptado las medidas técnicas y organizativas necesarias para garantizar la seguridad de los datos personales y evitar su alteración, pérdida, tratamiento o acceso no autorizado.
-              </p>
-            </section>
-
-            <section className="bg-accent/30 p-6 rounded-lg mt-8">
-              <p className="text-sm">
-                <strong>Nota:</strong> Este texto es una plantilla base conforme al RGPD. Debes actualizarlo con los datos reales de tu empresa y, preferiblemente, revisarlo con un profesional legal para asegurar su cumplimiento normativo.
               </p>
             </section>
           </div>

@@ -18,11 +18,9 @@ export default function AvisoLegal() {
                 En cumplimiento del artículo 10 de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y Comercio Electrónico, se informa de los siguientes datos:
               </p>
               <ul className="list-disc pl-6 space-y-2 mt-4">
-                <li><strong>Denominación social:</strong> ROMI DESBROCES [Actualizar con razón social completa]</li>
-                <li><strong>CIF/NIF:</strong> [Actualizar con CIF]</li>
-                <li><strong>Domicilio social:</strong> [Actualizar con dirección completa], Ciudad Real, España</li>
-                <li><strong>Teléfono:</strong> +34 600 123 456 [Actualizar]</li>
-                <li><strong>Email:</strong> info@romidesbroces.com [Actualizar]</li>
+                <li><strong>Denominación social:</strong> ROMI DESBROCES</li>
+                <li><strong>Teléfono:</strong> +34 644 49 46 17</li>
+                <li><strong>Email:</strong> info@romidesbroces.com</li>
               </ul>
             </section>
 
@@ -63,12 +61,6 @@ export default function AvisoLegal() {
               <h2 className="text-xl font-semibold text-foreground mb-4">6. Legislación aplicable y jurisdicción</h2>
               <p>
                 La relación entre ROMI DESBROCES y el usuario se regirá por la normativa española vigente y cualquier controversia se someterá a los Juzgados y Tribunales de Ciudad Real, salvo que la ley disponga otra cosa.
-              </p>
-            </section>
-
-            <section className="bg-accent/30 p-6 rounded-lg mt-8">
-              <p className="text-sm">
-                <strong>Nota:</strong> Este texto es una plantilla base. Debes actualizarlo con los datos reales de tu empresa y, preferiblemente, revisarlo con un profesional legal para asegurar su cumplimiento normativo.
               </p>
             </section>
           </div>

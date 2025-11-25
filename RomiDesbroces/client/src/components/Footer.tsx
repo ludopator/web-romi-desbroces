@@ -1,5 +1,4 @@
 import { Mail, Phone, MapPin } from "lucide-react";
-import { SiFacebook, SiInstagram, SiLinkedin } from "react-icons/si";
 import { Link } from "wouter";
 import logoImage from "@assets/generated_images/romi_desbroces_company_logo.png";
 
@@ -76,11 +75,11 @@ export default function Footer() {
               <li className="flex items-center gap-2">
                 <Phone className="h-4 w-4" />
                 <a 
-                  href="tel:+34600123456" 
+                  href="tel:+34644494617" 
                   className="text-background/80 hover:text-background transition-colors"
                   data-testid="link-footer-phone"
                 >
-                  +34 600 123 456
+                  +34 644 49 46 17
                 </a>
               </li>
               <li className="flex items-center gap-2">
@@ -110,38 +109,7 @@ export default function Footer() {
               © {currentYear} ROMI DESBROCES. Todos los derechos reservados.
             </p>
             
-            <div className="flex items-center gap-6">
-              <div className="flex gap-4">
-                <a 
-                  href="https://facebook.com" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-background/80 hover:text-background transition-colors"
-                  data-testid="link-facebook"
-                >
-                  <SiFacebook className="h-5 w-5" />
-                </a>
-                <a 
-                  href="https://instagram.com" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-background/80 hover:text-background transition-colors"
-                  data-testid="link-instagram"
-                >
-                  <SiInstagram className="h-5 w-5" />
-                </a>
-                <a 
-                  href="https://linkedin.com" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-background/80 hover:text-background transition-colors"
-                  data-testid="link-linkedin"
-                >
-                  <SiLinkedin className="h-5 w-5" />
-                </a>
-              </div>
-              
-              <div className="flex gap-4 text-sm">
+            <div className="flex gap-4 text-sm">
                 <Link 
                   href="/aviso-legal" 
                   className="text-background/80 hover:text-background transition-colors"
@@ -156,7 +124,6 @@ export default function Footer() {
                 >
                   Privacidad
                 </Link>
-              </div>
             </div>
           </div>
         </div>
