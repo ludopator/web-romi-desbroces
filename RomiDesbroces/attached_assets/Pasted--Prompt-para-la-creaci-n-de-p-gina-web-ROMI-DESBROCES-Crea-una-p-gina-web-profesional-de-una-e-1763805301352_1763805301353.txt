@@ -1,0 +1,118 @@
+# Prompt para la creación de página web – ROMI DESBROCES
+
+Crea una **página web profesional de una empresa de desbroce y limpieza de terrenos** llamada **ROMI DESBROCES**, utilizando el estilo visual, estructura y la experiencia de usuario de la siguiente web de referencia:
+
+> Estilo visual de referencia: “Arctic Edge Snow Removal – Road Snow Removal”  
+> (Diseño limpio, secciones claras, imágenes grandes, iconos, CTA destacado)
+
+---
+
+## 🎯 Objetivo
+Transmitir una imagen **moderna, profesional y enfocada a la prevención de incendios y la limpieza de terrenos** para ayuntamientos, propietarios y empresas industriales.
+
+---
+
+## 📌 Estructura requerida
+
+### 1️⃣ Banner principal (Hero Section)
+- Imagen grande de maquinaria desbrozando campo
+- Logo ROMI DESBROCES
+- Título principal:  
+  **Desbroce profesional para fincas, parcelas y montes**
+- Subtítulo:  
+  **Tu terreno limpio, seguro y listo para lo que venga**
+- Botón CTA: **Pide tu presupuesto gratis**
+- Fondo limpio, sensación de calidad
+
+---
+
+### 2️⃣ Beneficios (Sección con iconos)
+Mostrar 4–6 ventajas con iconos profesionales:
+- Evita sanciones municipales
+- Prevención de incendios
+- Máquina especializada y personal experto
+- Urgencias y rápida disponibilidad
+- Trabajamos en toda España
+
+---
+
+### 3️⃣ Proceso de trabajo
+Sección en 3–4 pasos con iconos:
+1. Análisis del terreno
+2. Desbroce mecanizado/manual
+3. Retirada o trituración de restos
+4. Entrega limpia y segura
+
+---
+
+### 4️⃣ Servicios principales
+Tarjetas o bloques visuales:
+- Desbroce con tractor (desde **0,15 €/m²**)
+- Desbroce manual en pendientes
+- Limpieza de solares urbanos
+- Caminos rurales y cunetas
+- Tala y poda en altura
+- Mantenimiento periódico anual
+
+Cada tarjeta con:
+- Imagen ilustrativa
+- Título + breve descripción + CTA pequeño
+
+---
+
+### 5️⃣ Cobertura
+Texto breve:
+> Ciudad Real y toda España  
+> Atención rápida y servicios de urgencia
+
+Ilustración o mapa simplificado opcional
+
+---
+
+### 6️⃣ Contacto rápido
+- Botón fijo de WhatsApp
+- Teléfono + correo
+- Formulario simple (Nombre, Teléfono, Mensaje)
+- QR opcional a WhatsApp o formulario
+
+---
+
+### 7️⃣ Footer / Pie de página
+- Logo
+- Textos legales mínimos
+- Redes sociales opcionales
+
+---
+
+## 🎨 Estilo visual y branding
+
+**Paleta Eco-Premium:**
+- Verde oliva (color principal)
+- Beige natural (fondos)
+- Negro mate (tipografías destacadas)
+
+Tipografía:
+- Sans serif moderna, legible
+
+Estética:
+- Profesional, limpia, naturaleza, seguridad
+
+**Responsive obligatorio**
+- Versión móvil con menú hamburguesa
+- Secciones apiladas
+
+---
+
+## 🔍 SEO básico
+- HTML5 semántico
+- H1 en el título principal, H2 en secciones
+- Meta descripción optimizada:
+  > “ROMI DESBROCES – Empresa profesional de desbroce y limpieza de fincas en Ciudad Real y toda España”
+- Alt text en todas las imágenes
+
+---
+
+## 🧩 Entregables esperados
+- Código HTML + CSS + imágenes optimizadas
+- Diseño completo fiel a la estructura
+- Archivos listos para desplegar en hosting o Replit

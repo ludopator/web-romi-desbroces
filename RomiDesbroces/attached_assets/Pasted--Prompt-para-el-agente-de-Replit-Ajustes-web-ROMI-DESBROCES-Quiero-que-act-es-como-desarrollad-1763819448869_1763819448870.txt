@@ -1,0 +1,172 @@
+# Prompt para el agente de Replit – Ajustes web ROMI DESBROCES
+
+Quiero que actúes como **desarrollador frontend** dentro de este proyecto.  
+**NO** crees una web nueva: solo corrige y mejores la que ya existe.
+
+---
+
+## 🎯 Objetivos principales
+
+1. Que **ningún texto se corte** (ni en móvil ni en escritorio) y se adapte siempre al ancho de la pantalla.
+2. Que el **logo de ROMI DESBROCES quede integrado visualmente en el hero**, encima de la imagen de fondo, sin un bloque blanco separado, manteniendo buena legibilidad.
+3. Mantener el **diseño, colores y estructura actual** de la web (paleta verde/oscuro, secciones, tipografías). Solo quiero ajustes de HTML/CSS y pequeñas mejoras de contenido en el hero.
+
+---
+
+## 1️⃣ Arreglar textos que se cortan (responsividad)
+
+Revisa todos los bloques principales de texto (H1, H2, párrafos, tarjetas de servicio, etc.) y garantiza que:
+
+- No tengan `white-space: nowrap;` ni anchos fijos que provoquen cortes.
+- Usen `max-width: 100%` y `box-sizing: border-box;` cuando estén dentro de contenedores.
+- Los títulos y subtítulos importantes usen tamaños de fuente **responsivos**.
+
+Ejemplo orientativo para el HERO (ajusta clases según el código real):
+
+```css
+.hero-title {
+  font-size: clamp(24px, 6vw, 40px);
+  line-height: 1.2;
+  margin: 0 0 12px;
+  white-space: normal;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.hero-subtitle {
+  font-size: clamp(14px, 4vw, 18px);
+  line-height: 1.4;
+  margin: 0 0 20px;
+  white-space: normal;
+}
+
+.hero-content {
+  max-width: 100%;
+  width: 100%;
+  padding: 0 16px;
+  box-sizing: border-box;
+}
+```
+
+Asegúrate de que **ningún texto** tenga un `width` rígido en píxeles que impida que se adapte al ancho.  
+Elimina o modifica cualquier `overflow: hidden` que esté cortando texto de forma innecesaria.
+
+Comprueba en vista móvil (anchos pequeños) que los textos hacen salto de línea de forma natural y no quedan cortados.
+
+---
+
+## 2️⃣ Integrar el logo con la imagen del HERO
+
+Ahora mismo el logo aparece dentro de un bloque blanco separado.  
+Quiero que el logo se vea **integrado sobre la foto del hero**, como parte del mismo bloque que el texto.
+
+### Estructura orientativa
+
+Adapta el HTML del hero para que tenga una estructura similar a esta (usa las clases que ya tenga el proyecto, no es necesario que se llamen igual, pero respeta la idea):
+
+```html
+<section class="hero">
+  <div class="hero-overlay">
+    <img src="/ruta/al/logo-transparente.png"
+         alt="ROMI DESBROCES"
+         class="hero-logo" />
+
+    <h1 class="hero-title">
+      Especialistas en desbroce de carreteras para ayuntamientos y obras públicas
+    </h1>
+
+    <p class="hero-subtitle">
+      Mantenimiento profesional de cunetas, márgenes de carretera, caminos rurales y zonas periurbanas.
+      Prevención de incendios y seguridad vial para tu municipio.
+    </p>
+
+    <a href="#contacto" class="hero-button">
+      Solicita propuesta para tu municipio
+    </a>
+  </div>
+</section>
+```
+
+**Notas importantes:**
+
+- Usa el logo con **fondo transparente** (PNG o SVG), no dentro de un recuadro blanco.
+- El logo debe ir en el mismo contenedor que el título y el subtítulo.
+
+### Estilos orientativos del hero
+
+Aplica estilos similares a estos (ajusta nombres de clases y valores para encajar con el diseño actual):
+
+```css
+.hero {
+  position: relative;
+  min-height: 70vh;
+  background-image: url('/ruta/a/la-imagen-de-carretera.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end; /* o center, según diseño actual */
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.55),
+    rgba(0, 0, 0, 0.25)
+  ); /* ligera capa oscura para que se lea mejor */
+}
+
+.hero-overlay {
+  position: relative;
+  z-index: 1;
+  max-width: 600px;
+  padding: 24px 16px 40px;
+  color: #fff;
+}
+
+.hero-logo {
+  height: 40px;      /* ajusta según se vea más equilibrado */
+  margin-bottom: 16px;
+  display: block;
+}
+```
+
+Objetivo: que el logo aparezca arriba, seguido del H1, subtítulo y botón, todo **sobre la misma imagen de fondo**, con buena legibilidad.
+
+---
+
+## 3️⃣ Mantener el posicionamiento de contenido
+
+El contenido del hero debe seguir centrado en nuestro mensaje actual:
+
+- **H1** (texto aproximado):
+  > Especialistas en desbroce de carreteras para ayuntamientos y obras públicas
+
+- **Subtítulo**:
+  > Mantenimiento profesional de cunetas, márgenes de carretera, caminos rurales y zonas periurbanas. Prevención de incendios y seguridad vial para tu municipio.
+
+- **Botón principal**:
+  > Solicita propuesta para tu municipio
+
+No cambies la estructura de secciones de la página ni el enfoque a **desbroce de carreteras y obra pública**; solo asegúrate de que el hero quede limpio y legible y que **no se corten textos en ningún dispositivo**.
+
+---
+
+## 4️⃣ Verificación final
+
+Al terminar:
+
+1. Comprueba la web en:
+   - Ancho móvil pequeño (~360px),
+   - Tablet (~768px),
+   - Escritorio (>1200px).
+
+2. Verifica que:
+   - El título y el subtítulo del hero no se cortan y se leen completos.
+   - El logo se ve integrado sobre la imagen (sin caja blanca separada).
+   - El botón del hero sigue siendo claramente visible y clicable.
+   - No has roto el diseño general ni las otras secciones de la página.
+
+Haz todos los cambios necesarios en los archivos HTML/CSS del proyecto para cumplir estos requisitos, usando la estructura y nomenclatura actual del código como base.

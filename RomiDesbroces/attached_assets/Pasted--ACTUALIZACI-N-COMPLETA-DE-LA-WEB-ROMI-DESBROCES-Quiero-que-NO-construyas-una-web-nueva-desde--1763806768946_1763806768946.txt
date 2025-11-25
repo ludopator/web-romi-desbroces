@@ -1,0 +1,217 @@
+# ACTUALIZACIÓN COMPLETA DE LA WEB – ROMI DESBROCES
+
+Quiero que **NO construyas una web nueva desde cero**, sino que **modifiques la web actual** de ROMI DESBROCES manteniendo el diseño, estructura y estilos, pero cambiando el enfoque de contenidos.
+
+El objetivo es que la web esté **claramente enfocada a Ayuntamientos y Administraciones Públicas** y que se entienda que nuestro servicio principal es el **desbroce de carreteras y obra pública**, mientras que el desbroce de fincas y parcelas queda como servicio adicional.
+
+---
+
+## 1️⃣ Posicionamiento general
+
+- Reescribe todos los textos de la web para que:
+  - El público objetivo principal sean **Ayuntamientos, Diputaciones y otras Administraciones Públicas**.
+  - El servicio principal sea **“Desbroce de carreteras, cunetas y caminos públicos”**.
+  - Fincas, parcelas y montes aparezcan como servicios **secundarios/complementarios**.
+- El tono debe ser **profesional, técnico y confiable**, usando lenguaje que entiendan técnicos municipales y responsables de obras/medio ambiente.
+
+---
+
+## 2️⃣ Cambios en el HERO (bloque inicial)
+
+En el bloque principal (hero) donde actualmente aparece el mensaje de “Desbroce profesional para fincas, parcelas y montes”:
+
+- Cambia el **título principal (H1)** por:
+
+  > **Especialistas en desbroce de carreteras y obra pública**
+
+- Cambia el **subtítulo** por:
+
+  > **Mantenimiento profesional de cunetas, márgenes de carretera, caminos rurales y zonas periurbanas. Prevención de incendios y seguridad vial para tu municipio.**
+
+- Mantén el botón principal pero cambia el texto a:
+
+  > **Solicita propuesta para tu Ayuntamiento**
+
+(El estilo visual, tamaño de letra y posición del botón deben mantenerse igual.)
+
+- Si es posible, sustituye la imagen de fondo por una foto en la que se vea claramente:
+  - Una **carretera** o camino asfaltado
+  - Maquinaria desbrozando **cunetas o márgenes de carretera**
+
+---
+
+## 3️⃣ Nueva sección prioritaria: “Ayuntamientos y Obras Públicas”
+
+Justo después del hero (o desplazando hacia arriba la sección verde que ya habla de Administraciones si ya existe algo parecido), añade o adapta una sección llamada:
+
+> **Servicios para Ayuntamientos y Obras Públicas**
+
+Contenido de esta sección:
+
+- Breve introducción:
+
+  > *En ROMI DESBROCES estamos especializados en el mantenimiento de carreteras y espacios públicos. Trabajamos con Ayuntamientos y Administraciones de toda España para mantener cunetas, márgenes de carretera y caminos rurales limpios y seguros.*
+
+- Lista de servicios específicos para lo público (en columnas o tarjetas):
+
+  - Desbroce de **cunetas y márgenes de carretera**
+  - Mantenimiento de **caminos rurales y vías pecuarias**
+  - Desbroce en **zonas periurbanas y accesos a núcleos urbanos**
+  - Limpieza de vegetación en **polígonos industriales y zonas logísticas**
+  - Creación y mantenimiento de **franjas de seguridad contra incendios** alrededor de carreteras, caminos y zonas habitadas
+  - Contratos de **mantenimiento periódico** (campañas anuales o por temporada)
+
+- Añade un CTA secundario dentro de esta sección:
+
+  > **Descarga información para Administraciones Públicas** (puede apuntar a un PDF o al formulario de contacto, si aún no hay PDF)
+
+---
+
+## 4️⃣ Beneficios / “¿Por qué elegir ROMI DESBROCES?”
+
+En la sección donde aparecen beneficios con iconos:
+
+- Enfoca los textos específicamente a lo que buscan los Ayuntamientos:
+
+  Ejemplos de bullets:
+
+  - **Cumplimiento normativo** en materia de prevención de incendios y conservación de carreteras.
+  - **Seguridad vial**: mejora de visibilidad en curvas, cruces y accesos.
+  - **Equipos propios y personal formado en PRL**, con EPIs y Seguro de RC.
+  - **Planificación por campañas** (primavera, verano, etc.) adaptada a las necesidades del municipio.
+  - **Respuesta rápida en urgencias** (caída de árboles o crecimiento de vegetación que invade la calzada).
+
+Mantén el diseño y el número de bloques, solo cambia títulos y descripciones.
+
+---
+
+## 5️⃣ Sección de servicios generales
+
+En la sección donde se listan los servicios (tarjetas/columnas):
+
+1. Asegúrate de que **la primera tarjeta/servicio** sea siempre:
+
+   **“Desbroce de carreteras y cunetas”**
+
+   Descripción sugerida:
+
+   > Desbroce mecanizado de márgenes de carretera, cunetas y taludes. Mejoramos la visibilidad, reducimos el riesgo de incendio y mantenemos la vía en condiciones seguras.
+
+2. A continuación, coloca:
+
+   - **Mantenimiento de caminos rurales y vías públicas**
+   - **Desbroce en zonas periurbanas y polígonos**
+   - **Desbroce de fincas y parcelas (servicio secundario)**
+
+   Para fincas y parcelas, deja claro que es un **servicio adicional**, no el principal.
+
+3. Incluye, donde toque, **precios orientativos** solo cuando tenga sentido (por ejemplo, “desde 0,15 €/m²” para desbroce mecanizado en condiciones estándar). No hace falta que haya precios en todas las tarjetas.
+
+---
+
+## 6️⃣ Eliminar tala y poda de árboles
+
+- Elimina por completo, de **toda la web**, cualquier mención a:
+  - Tala de árboles
+  - Poda en altura
+  - Poda ornamental o mantenimiento de arbolado
+
+ROMI DESBROCES debe presentarse exclusivamente como empresa especializada en **desbroce y limpieza de vegetación baja / matorral / cunetas / parcelas**, no como empresa de arboricultura.
+
+---
+
+## 7️⃣ Cobertura y experiencia
+
+En la sección donde se habla de “Cobertura nacional” o similar:
+
+- Refuerza este mensaje orientándolo a administraciones:
+
+  > *Trabajamos con Ayuntamientos y Administraciones de toda España, coordinando campañas de desbroce por temporada y adaptándonos a los planes de prevención de incendios de cada comunidad autónoma.*
+
+- Menciona:
+  - “Experiencia desde 2004”
+  - “Equipos con PRL y Seguro de Responsabilidad Civil”
+  - “Posibilidad de contratos anuales o por campaña”
+
+Mantén el diseño actual; solo cambia el texto.
+
+---
+
+## 8️⃣ Bloques tipo “Especialistas en…”
+
+Si hay bloques de texto negro o secciones que repiten el claim general (por ejemplo, “Especialistas en desbroce de…”):
+
+- Asegúrate de que todos estos claims se centren en:
+
+  - **Desbroce de carreteras y cunetas**
+  - **Mantenimiento para Ayuntamientos y entidades públicas**
+  - La parte de fincas/parcelas que quede siempre en segundo plano o como “También realizamos…”
+
+Ejemplo de frase:
+
+> *Especialistas en desbroce de carreteras, cunetas y caminos públicos, con servicio complementario de limpieza de fincas y parcelas privadas.*
+
+---
+
+## 9️⃣ Formulario y CTA final
+
+En la sección de contacto / solicitud de presupuesto:
+
+- Cambia el título a algo relacionado con Administraciones y proyectos públicos:
+
+  > **Solicita un presupuesto para tu municipio o proyecto público**
+
+- Añade una frase introductoria:
+
+  > *Cuéntanos qué carreteras, caminos o zonas públicas necesitas desbrozar y te prepararemos una propuesta adaptada a tu Ayuntamiento o administración.*
+
+- Mantén los campos del formulario tal cual estén ahora (Nombre, Email, Teléfono, Mensaje, etc.), solo adapta el texto de ayuda si lo hubiera.
+
+- Botón de envío:
+
+  > **Enviar solicitud**
+
+o
+
+  > **Solicitar propuesta**
+
+---
+
+## 🔟 Imágenes
+
+- Siempre que sea posible, sustituye las imágenes genéricas de campo o fincas por imágenes donde se vea claramente:
+  - Una **carretera** o camino asfaltado
+  - Cunetas, taludes y márgenes
+  - Maquinaria trabajando en márgenes de vía
+
+- Si mantienes alguna imagen de fincas/parcelas, que aparezcan como ejemplos secundarios.
+
+---
+
+## 1️⃣1️⃣ SEO y textos auxiliares
+
+- Actualiza el **título de la página (title)** a algo como:
+
+  > ROMI DESBROCES – Especialistas en desbroce de carreteras y cunetas para Ayuntamientos
+
+- Actualiza la **meta descripción**:
+
+  > Empresa especializada en desbroce de carreteras, cunetas y caminos rurales para Ayuntamientos y Administraciones Públicas. Prevención de incendios, seguridad vial y mantenimiento de zonas periurbanas. Cobertura desde Ciudad Real a toda España.
+
+- En los textos, utiliza de forma natural palabras clave como:
+  - “desbroce de carreteras”
+  - “mantenimiento de cunetas”
+  - “servicios para Ayuntamientos”
+  - “prevención de incendios en vías públicas”
+  - “conservación de carreteras”
+
+---
+
+## 1️⃣2️⃣ Mantener diseño y estilos
+
+- No cambies la estructura base, ni el tipo de letra, ni la paleta de colores principal de la web.
+- Solo actualiza textos, orden de prioridad de bloques y, cuando sea oportuno, algunas imágenes para que reflejen mejor el desbroce de carreteras.
+
+---
+
+Sigue todas estas instrucciones para que la web actual de ROMI DESBROCES quede claramente posicionada como **empresa especialista en desbroce de carreteras y obra pública**, manteniendo el resto de servicios (fincas, parcelas y montes) como complemento.
