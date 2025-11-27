@@ -11,6 +11,7 @@ export default function ContactSection() {
   const { toast } = useToast();
   const [formData, setFormData] = useState({
     name: "",
+    email: "",
     phone: "",
     message: ""
   });
@@ -32,6 +33,7 @@ export default function ContactSection() {
           },
           body: JSON.stringify({
             name: formData.name,
+            email: formData.email,
             phone: formData.phone,
             message: formData.message,
             timestamp: new Date().toISOString(),
@@ -57,7 +59,7 @@ export default function ContactSection() {
       }
 
       // Limpiar formulario
-      setFormData({ name: "", phone: "", message: "" });
+      setFormData({ name: "", email: "", phone: "", message: "" });
     } catch (error) {
       console.error('Error al enviar formulario:', error);
       toast({
@@ -100,6 +102,19 @@ export default function ContactSection() {
                     required
                     disabled={isSubmitting}
                     data-testid="input-name"
+                  />
+                </div>
+                <div>
+                  <Label htmlFor="email">Email</Label>
+                  <Input
+                    id="email"
+                    type="email"
+                    value={formData.email}
+                    onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                    placeholder="tu@email.com"
+                    required
+                    disabled={isSubmitting}
+                    data-testid="input-email"
                   />
                 </div>
                 <div>
