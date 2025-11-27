@@ -1,10 +1,12 @@
 import { createRoot } from "react-dom/client";
-import { HashRouter } from "react-router-dom";   // ⬅️ NUEVO
+// 💡 CAMBIO: Usamos BrowserRouter en lugar de HashRouter
+import { BrowserRouter } from "react-router-dom";
 import App from "./App";
 import "./index.css";
 
 createRoot(document.getElementById("root")!).render(
-  <HashRouter>
+  // 💡 USAMOS BrowserRouter.
+  <BrowserRouter>
     <App />
-  </HashRouter>
+  </BrowserRouter>,
 );
