@@ -75,10 +75,10 @@ export default function ContactSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4" data-testid="text-contact-title">
-            Solicita un presupuesto para tu municipio o proyecto público
+            Solicita tu presupuesto sin compromiso
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Cuéntanos qué carreteras, caminos o zonas públicas necesitas desbrozar y te prepararemos una propuesta adaptada a tu Ayuntamiento o administración
+            Cuéntanos qué necesitas y te prepararemos una propuesta personalizada
           </p>
         </div>
 
@@ -91,12 +91,12 @@ export default function ContactSection() {
             <CardContent>
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
-                  <Label htmlFor="name">Nombre y cargo</Label>
+                  <Label htmlFor="name">Nombre</Label>
                   <Input
                     id="name"
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    placeholder="Ej: Juan García, Técnico de Medio Ambiente"
+                    placeholder="Tu nombre"
                     required
                     disabled={isSubmitting}
                     data-testid="input-name"

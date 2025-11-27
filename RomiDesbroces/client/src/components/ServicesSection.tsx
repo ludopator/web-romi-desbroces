@@ -8,22 +8,32 @@ const services = [
   {
     image: ruralImage,
     title: "Desbroce de carreteras y cunetas",
-    description: "Desbroce mecanizado de márgenes de carretera, cunetas y taludes. Mejoramos la visibilidad, reducimos el riesgo de incendio y mantenemos la vía en condiciones seguras.",
+    description: "Desbroce mecanizado de márgenes de carretera, cunetas y taludes. Mejoramos la visibilidad y mantenemos la vía en condiciones seguras.",
     alt: "Desbroce de cunetas y márgenes de carretera",
-    featured: true
   },
   {
     image: tractorImage,
-    title: "Mantenimiento de caminos rurales y vías públicas",
-    description: "Limpieza y acondicionamiento de caminos rurales, vías pecuarias y accesos a núcleos urbanos",
+    title: "Mantenimiento de caminos y fincas",
+    description: "Limpieza y acondicionamiento de caminos rurales, fincas rústicas y parcelas.",
     alt: "Mantenimiento de caminos rurales"
   },
   {
     image: manualImage,
-    title: "Desbroce de fincas y parcelas",
-    description: "Servicio adicional de limpieza de terrenos privados, fincas rústicas y parcelas",
-    alt: "Desbroce de fincas privadas",
-    secondary: true
+    title: "Poda de árboles en altura",
+    description: "Poda profesional de árboles en altura con personal cualificado y equipamiento especializado.",
+    alt: "Poda de árboles en altura",
+  },
+  {
+    image: ruralImage,
+    title: "Prevención de incendios",
+    description: "Creación de cortafuegos, desbroce de perímetros y limpieza de zonas forestales para prevenir incendios.",
+    alt: "Prevención de incendios forestales",
+  },
+  {
+    image: tractorImage,
+    title: "Retirada y triturado de restos vegetales",
+    description: "Recogida, triturado y gestión de restos vegetales procedentes de podas y desbroces.",
+    alt: "Triturado de restos vegetales",
   }
 ];
 
@@ -40,18 +50,18 @@ export default function ServicesSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4" data-testid="text-services-title">
-            Servicios de desbroce y mantenimiento
+            Nuestros servicios
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Especialistas en desbroce de carreteras, cunetas y caminos públicos, con servicio complementario de limpieza de fincas y parcelas privadas
+            Soluciones profesionales de desbroce, poda y mantenimiento de terrenos
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service, index) => (
             <Card 
               key={index} 
-              className={`overflow-hidden hover-elevate ${service.featured ? 'md:col-span-2 lg:col-span-1' : ''}`}
+              className="overflow-hidden hover-elevate"
               data-testid={`card-service-${index}`}
             >
               <div className="relative h-48 overflow-hidden">
@@ -61,16 +71,6 @@ export default function ServicesSection() {
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                {service.featured && (
-                  <div className="absolute top-4 right-4 bg-primary text-primary-foreground px-3 py-1 rounded-md text-sm font-semibold">
-                    Principal
-                  </div>
-                )}
-                {service.secondary && (
-                  <div className="absolute top-4 right-4 bg-secondary text-secondary-foreground px-3 py-1 rounded-md text-sm font-semibold">
-                    Servicio adicional
-                  </div>
-                )}
               </div>
               <CardContent className="pt-6">
                 <h3 className="text-xl font-semibold mb-2" data-testid={`text-service-title-${index}`}>

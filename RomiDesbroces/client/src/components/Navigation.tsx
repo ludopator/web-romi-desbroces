@@ -30,9 +30,9 @@ export default function Navigation() {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
             <button
-              onClick={() => scrollToSection("ayuntamientos")}
+              onClick={() => scrollToSection("clientes")}
               className="text-foreground hover:text-primary transition-colors font-semibold"
-              data-testid="link-ayuntamientos"
+              data-testid="link-clientes"
             >
               Clientes
             </button>
@@ -83,9 +83,9 @@ export default function Navigation() {
           <div className="md:hidden py-4 border-t" data-testid="mobile-menu">
             <div className="flex flex-col gap-4">
               <button
-                onClick={() => scrollToSection("ayuntamientos")}
+                onClick={() => scrollToSection("clientes")}
                 className="text-foreground hover:text-primary transition-colors text-left px-2 font-semibold"
-                data-testid="link-ayuntamientos-mobile"
+                data-testid="link-clientes-mobile"
               >
                 Clientes
               </button>

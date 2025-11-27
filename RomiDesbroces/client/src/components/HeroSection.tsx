@@ -35,13 +35,13 @@ export default function HeroSection() {
           className="hero-title text-white mb-4 sm:mb-6 leading-tight" 
           data-testid="text-hero-title"
         >
-          Especialistas en desbroce de carreteras y obra pública
+          Especialistas en desbroce y mantenimiento de terrenos
         </h1>
         <p 
           className="hero-subtitle text-white/95 mb-6 sm:mb-8 leading-relaxed max-w-3xl mx-auto" 
           data-testid="text-hero-subtitle"
         >
-          Mantenimiento profesional de cunetas, márgenes de carretera, caminos rurales y fincas. Prevención de incendios y seguridad vial para empresas y administraciones.
+          Desbroce de carreteras, cunetas y fincas. Poda de árboles en altura, prevención de incendios y retirada de restos vegetales.
         </p>
         <Button
           size="lg"

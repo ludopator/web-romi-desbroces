@@ -67,7 +67,7 @@ export default function PublicAdministrationSection() {
   };
 
   return (
-    <section id="ayuntamientos" className="py-16 sm:py-24 bg-primary text-primary-foreground">
+    <section id="clientes" className="py-16 sm:py-24 bg-primary text-primary-foreground">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-12">
@@ -76,12 +76,11 @@ export default function PublicAdministrationSection() {
             <span className="text-sm font-semibold uppercase tracking-wide">Nuestros Clientes</span>
           </div>
           <h2 className="text-3xl sm:text-4xl font-bold mb-4" data-testid="text-admin-title">
-            Servicios para Empresas y Administraciones
+            Trabajamos para todo tipo de clientes
           </h2>
           <p className="text-lg text-primary-foreground/90 max-w-3xl mx-auto mb-6">
             En ROMI DESBROCES estamos especializados en el mantenimiento de carreteras, espacios públicos y terrenos privados. 
-            Trabajamos con empresas, comunidades de propietarios y administraciones de toda España para mantener cunetas, márgenes 
-            de carretera y caminos limpios y seguros.
+            Trabajamos en toda España para mantener cunetas, márgenes de carretera, caminos y fincas limpios y seguros.
           </p>
         </div>
 
@@ -149,7 +148,7 @@ export default function PublicAdministrationSection() {
         {/* Municipalities Section */}
         <div className="pt-8 border-t border-primary-foreground/20 text-center">
           <p className="text-lg text-primary-foreground/90 mb-6">
-            Trabajamos con empresas y administraciones de toda España, coordinando campañas de desbroce 
+            Trabajamos en toda España, coordinando campañas de desbroce 
             por temporada y adaptándonos a las necesidades de cada cliente
           </p>
           <div className="flex flex-wrap justify-center gap-4 opacity-60">
