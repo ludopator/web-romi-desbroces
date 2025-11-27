@@ -13,7 +13,10 @@ export default defineConfig(async () => {
       : [];
 
   return {
-    base: "/web-romi-desbroces/", // Necesario para GitHub Pages
+    // 💡 LÍNEA CORREGIDA: Cambiado de "/web-romi-desbroces/" a "/"
+    // para que funcione con tu dominio personalizado en la raíz (romidesbroces.com).
+    base: "/",
+
     plugins: [react(), runtimeErrorOverlay(), ...extraPlugins],
     resolve: {
       alias: {
