@@ -3,6 +3,8 @@ import { Card, CardContent } from "@/components/ui/card";
 import tractorImage from "@assets/generated_images/tractor_clearing_service_card.png";
 import manualImage from "@assets/generated_images/manual_clearing_steep_terrain.png";
 import ruralImage from "@assets/generated_images/rural_road_maintenance_service.png";
+import firePreventionImage from "@assets/generated_images/wildfire_prevention_firebreak_creation.png";
+import woodChipperImage from "@assets/generated_images/wood_chipper_processing_vegetation.png";
 
 const services = [
   {
@@ -24,13 +26,13 @@ const services = [
     alt: "Poda de árboles en altura",
   },
   {
-    image: ruralImage,
+    image: firePreventionImage,
     title: "Prevención de incendios",
     description: "Creación de cortafuegos, desbroce de perímetros y limpieza de zonas forestales para prevenir incendios.",
     alt: "Prevención de incendios forestales",
   },
   {
-    image: tractorImage,
+    image: woodChipperImage,
     title: "Retirada y triturado de restos vegetales",
     description: "Recogida, triturado y gestión de restos vegetales procedentes de podas y desbroces.",
     alt: "Triturado de restos vegetales",
