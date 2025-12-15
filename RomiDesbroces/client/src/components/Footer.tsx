@@ -1,5 +1,4 @@
 import { Mail, Phone, MapPin } from "lucide-react";
-import { Link } from "wouter";
 import logoImage from "@assets/generated_images/romi_desbroces_company_logo.png";
 
 export default function Footer() {
@@ -109,22 +108,7 @@ export default function Footer() {
               © {currentYear} ROMI DESBROCES. Todos los derechos reservados.
             </p>
             
-            <div className="flex gap-4 text-sm">
-                <Link 
-                  href="/aviso-legal" 
-                  className="text-background/80 hover:text-background transition-colors"
-                  data-testid="link-legal"
-                >
-                  Aviso Legal
-                </Link>
-                <Link 
-                  href="/privacidad" 
-                  className="text-background/80 hover:text-background transition-colors"
-                  data-testid="link-privacy"
-                >
-                  Privacidad
-                </Link>
-            </div>
+            {/* Enlaces de Aviso Legal y Privacidad ocultos por solicitud del cliente */}
           </div>
         </div>
       </div>
