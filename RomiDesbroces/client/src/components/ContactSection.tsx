@@ -189,11 +189,11 @@ export default function ContactSection() {
                   <div>
                     <h3 className="text-lg font-semibold mb-1" data-testid="text-email-title">Email</h3>
                     <a 
-                      href="mailto:info@romidesbroces.com" 
+                      href="mailto:proyectos@romidesbroces.com" 
                       className="text-muted-foreground hover:text-primary transition-colors"
                       data-testid="link-email"
                     >
-                      info@romidesbroces.com
+                      proyectos@romidesbroces.com
                     </a>
                     <p className="text-sm text-muted-foreground mt-2">
                       Respuesta en menos de 24 horas
