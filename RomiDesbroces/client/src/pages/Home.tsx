@@ -1,9 +1,8 @@
 import Navigation from "@/components/Navigation";
 import HeroSection from "@/components/HeroSection";
-import BenefitsSection from "@/components/BenefitsSection";
-import PublicAdministrationSection from "@/components/PublicAdministrationSection";
-import ProcessSection from "@/components/ProcessSection";
 import ServicesSection from "@/components/ServicesSection";
+import MaquinariaSection from "@/components/MaquinariaSection";
+import CertificacionesSection from "@/components/CertificacionesSection";
 import CoverageSection from "@/components/CoverageSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
@@ -15,10 +14,9 @@ export default function Home() {
       <Navigation />
       <main>
         <HeroSection />
-        <BenefitsSection />
-        <PublicAdministrationSection />
-        <ProcessSection />
         <ServicesSection />
+        <MaquinariaSection />
+        <CertificacionesSection />
         <CoverageSection />
         <ContactSection />
       </main>

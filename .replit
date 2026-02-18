@@ -10,19 +10,6 @@ expertMode = true
 runButton = "Project"
 
 [[workflows.workflow]]
-name = "Run App"
-mode = "sequential"
-author = 45409804
-
-[[workflows.workflow.tasks]]
-task = "shell.exec"
-args = "npm install"
-
-[[workflows.workflow.tasks]]
-task = "shell.exec"
-args = "npm start"
-
-[[workflows.workflow]]
 name = "Project"
 mode = "parallel"
 author = "agent"
