@@ -1,0 +1,65 @@
+# PROMPT PARA REPLIT — Rediseño ligero web ROMY Desbroces (más simple + foco carreteras + herbicidas + fotos maquinaria)
+
+Quiero que ajustes la web de **ROMY Desbroces** para que sea **más simple**, con un mensaje **muy enfocado a 2 líneas principales**:
+1) **Desbroce y mantenimiento de carreteras (cunetas, arcenes, márgenes)**
+2) **Tratamientos con herbicida en carreteras** (indicando que contamos con **carné de aplicador / personal certificado** y que trabajamos con productos autorizados)
+
+Sin dejar de mencionar que también hacemos otros trabajos (fincas/parcelas/caminos), pero que quede claramente como secundario.
+
+## 1) Simplificar estructura y copy (menos secciones, más directo)
+- Reduce el “scroll” y deja solo lo esencial.
+- Estructura recomendada (1 sola página):
+  - **Hero**: titular claro + 2 bullets + CTA
+  - **Servicios** (2 cards principales + 1 card “otros” secundaria)
+  - **Maquinaria y equipo** (fotos)
+  - **Garantías / certificaciones** (carné herbicida, PRL, señalización vial si aplica)
+  - **Zona de servicio** (base Ciudad Real, trabajamos provincias cercanas / CLM y alrededores)
+  - **Contacto** (teléfono visible + formulario si ya existe)
+  - **Dirección** (bloque tipo “Dónde estamos”)
+
+## 2) Actualizar mensajes (texto sugerido, adapta al estilo actual)
+### Hero (ejemplo)
+- **H1:** “Desbroce de carreteras y tratamiento con herbicida”
+- **Sub:** “Mantenimiento de cunetas, arcenes y márgenes + tratamientos autorizados con personal certificado.”
+- **Bullets:**  
+  - “Señalización y trabajo seguro en vía” (si aplica, si no, omitir)  
+  - “Documentación y trazabilidad del tratamiento (fichas / autorizaciones)”  
+- **CTA principal:** “Pide presupuesto” (scroll a contacto)
+- **CTA secundario:** “Llámanos” (tel:+34…)
+
+### Servicios (3 cards)
+1) **Desbroce de carreteras** (principal): siegas, cunetas, márgenes, repaso manual zonas difíciles, mantenimiento preventivo.
+2) **Herbicidas en carreteras** (principal): tratamientos primavera/otoño, productos autorizados, cumplimiento y documentación, personal con carné.
+3) **Otros trabajos** (secundario): fincas, parcelas, caminos, desbroce general (solo 1–2 líneas).
+
+### Bloque “Certificación / garantías”
+- Incluir claramente: “Personal con **carné de aplicador de productos fitosanitarios** (herbicidas) y procedimientos de trabajo seguro.”
+- Si existe documentación/PRL, mencionarlo sin prometer cosas no disponibles.
+
+## 3) Integrar fotos de maquinaria (tractor + 2 furgonetas)
+- Añade una sección “**Maquinaria y equipo**” con:
+  - 1 foto del **tractor**
+  - 2 fotos de las **furgonetas**
+- Mostrar en grid responsive (3 columnas desktop, 1 columna móvil).
+- Cada imagen con:
+  - **título** (p.ej. “Tractor de desbroce”, “Furgoneta de apoyo 1”, “Furgoneta de apoyo 2”)
+  - **alt text** correcto para SEO
+- Optimiza: comprimir/convertir a webp si el proyecto lo soporta, lazy-load, tamaños correctos.
+- Si aún no tengo las fotos en repo, crea placeholders y deja claro en el código dónde sustituir (`/public/images/maquinaria/tractor.jpg`, etc.).
+
+## 4) Añadir dirección (Ciudad Real / Valdepeñas)
+- En el footer y/o sección “Dónde estamos”, añadir:
+  - **Dirección:** “Calle Mayor 1, Valdepeñas, Ciudad Real”
+- Hazlo visible pero sin recargar.
+
+## 5) Mantener lo existente, pero limpio
+- No cambies backend ni lógica si no hace falta.
+- Mantén estilos/branding actual (tipografías, colores) pero con menos bloques y más claridad.
+- Revisa que el contenido quede coherente en móvil (especialmente hero + servicios + fotos).
+
+## 6) Entregable
+- Implementa los cambios directamente en el proyecto.
+- Indica qué archivos tocaste y dónde están las rutas de imágenes.
+- Asegúrate de que no se rompa nada (build/preview sin errores).
+
+> Objetivo final: una web más corta, más clara y con foco en **carreteras + herbicidas**, con fotos reales de la maquinaria y la dirección visible.
