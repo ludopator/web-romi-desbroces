@@ -10,14 +10,14 @@ const maquinaria = [
   },
   {
     src: "/images/maquinaria/furgoneta1.png",
-    title: "Furgoneta de apoyo 1",
+    title: "Furgoneta de apoyo",
     alt: "Furgoneta de apoyo para equipo de desbroce y tratamiento con herbicida en carreteras",
     icon: Truck,
   },
   {
     src: "/images/maquinaria/furgoneta2.png",
-    title: "Furgoneta de apoyo 2",
-    alt: "Furgoneta de apoyo para transporte de equipos de desbroce y señalización vial",
+    title: "Remolque Agrícola",
+    alt: "Remolque agrícola para transporte de equipos de desbroce y señalización vial",
     icon: Truck,
   },
 ];
@@ -72,10 +72,6 @@ export default function MaquinariaSection() {
             );
           })}
         </div>
-
-        <p className="text-center text-sm text-muted-foreground mt-6">
-          Para usar tus propias fotos, sustituye los archivos en <code className="bg-accent px-1 rounded text-xs">/public/images/maquinaria/</code> (tractor.png, furgoneta1.png, furgoneta2.png)
-        </p>
       </div>
     </section>
   );
