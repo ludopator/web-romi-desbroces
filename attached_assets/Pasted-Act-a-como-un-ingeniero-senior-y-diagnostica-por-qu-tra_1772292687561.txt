@@ -1,0 +1,41 @@
+Actúa como un ingeniero senior y diagnostica por qué, tras hacer git push desde Replit a GitHub, la web en https://romidesbroces.com (GitHub Pages configurado en Settings > Pages como: branch=main, folder=/docs) sigue mostrando la versión antigua.
+
+Quiero que revises y me guíes con comandos concretos (en la consola de Replit) y comprobaciones en GitHub para encontrar el problema. No asumas nada.
+
+1) Verifica Git
+- Ejecuta y dime qué significa cada salida: 
+  - git status
+  - git branch
+  - git remote -v
+  - git log -5 --oneline
+- Confirma que estoy en main y que origin apunta a https://github.com/ludopator/web-romi-desbroces.git
+
+2) Verifica que Pages está publicando lo correcto
+- Comprueba si el contenido que se está publicando es realmente /docs:
+  - lista el contenido de docs y verifica timestamps:
+    - ls -la docs | head
+    - stat docs/index.html
+- Asegúrate de que docs/index.html contiene los cambios recientes (busca un texto o firma que hayamos cambiado).
+- Si el proyecto usa build (React/Vite), asegúrate de que el build se está generando en docs. 
+  - Si actualmente el build genera dist/, propón y aplica una solución para que el output final vaya a docs/ (y añadiendo docs/.nojekyll si hace falta).
+
+3) Verifica que el push incluye /docs
+- Tras el build, ejecuta:
+  - git add -A
+  - git status
+  - git commit -m "Publish latest build to docs"
+  - git push origin main
+- Luego dime qué archivo(s) dentro de docs cambiaron en el commit.
+
+4) Verifica el estado del deploy en GitHub
+- Indícame exactamente dónde mirar en GitHub:
+  - Settings > Pages (qué commit pone “Last deployed”)
+  - Actions (última ejecución “Pages build and deployment”, si hay errores)
+- Si hay errores, dime cómo solucionarlos.
+
+5) Descarta caché y DNS
+- Compara romidesbroces.com con la URL github.io equivalente (si existe).
+- Si romidesbroces.com no cambia pero github.io sí, diagnostica DNS/Cloudflare y caché.
+- Sugiere pruebas rápidas: hard refresh, incógnito, cambio visible, etc.
+
+Objetivo: terminar con la web sirviendo el último commit, y dejar un procedimiento repetible para futuros deploys.
