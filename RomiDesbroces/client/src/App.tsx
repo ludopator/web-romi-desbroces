@@ -5,6 +5,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 
 import Home from "@/pages/Home";
+import Gracias from "@/pages/Gracias";
 import AvisoLegal from "@/pages/AvisoLegal";
 import Privacidad from "@/pages/Privacidad";
 import NotFound from "@/pages/not-found";
@@ -13,6 +14,7 @@ function AppRoutes() {
   return (
     <Switch>
       <Route path="/" component={Home} />
+      <Route path="/gracias" component={Gracias} />
       <Route path="/aviso-legal" component={AvisoLegal} />
       <Route path="/privacidad" component={Privacidad} />
       <Route component={NotFound} />

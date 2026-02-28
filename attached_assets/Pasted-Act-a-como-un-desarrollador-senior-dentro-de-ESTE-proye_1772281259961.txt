@@ -1,0 +1,52 @@
+Actúa como un desarrollador senior dentro de ESTE proyecto en Replit. No necesitas que te describa la arquitectura: inspecciona el repo, localiza la sección visible con el H1 “Solicita tu presupuesto sin compromiso” (la que contiene el “Formulario de contacto”, los cards de “Teléfono”, “Email” y el bloque/botón de “WhatsApp”, además del botón flotante verde de WhatsApp abajo a la derecha) y modifica SOLO lo necesario para instrumentar medición sin perjudicar UX.
+
+Objetivo de negocio:
+Quiero medir conversiones de “Contacto” en Google Ads/GA4. Ahora mismo el formulario se envía pero no navega a ninguna URL nueva, así que no puedo medir por URL.
+
+Cambios requeridos (en orden):
+1) Crear una página de éxito accesible por URL:
+   - Ruta: /gracias (o /thanks si el router del proyecto lo usa así, pero prioriza /gracias).
+   - Contenido: “Gracias por contactar, te responderemos en breve” + un botón/link para volver a inicio.
+   - Mantén estilos consistentes con la web (mismos márgenes/tipografías).
+
+2) Redirección tras envío del formulario:
+   - Cuando el formulario de la sección “Formulario de contacto” se envíe correctamente (submit OK), redirige automáticamente a /gracias.
+   - Si hay validación o envío async, la redirección debe ocurrir solo en éxito real (no al hacer click).
+   - Si algo falla, NO rompas el envío: el usuario debe ver un mensaje inline de error o de “no se pudo enviar”.
+
+3) Tracking de eventos (sin bloquear UX):
+   - Implementa una función segura track(eventName, params) que:
+     - Si existe window.gtag => gtag('event', eventName, params)
+     - Si no, si existe window.dataLayer => dataLayer.push({event: eventName, ...params})
+     - Si no hay nada, no hace nada (no debe lanzar errores).
+   - Dispara estos eventos:
+     a) lead_form_submit (solo cuando el envío es exitoso, justo antes de redirigir)
+     b) click_phone (cuando hacen click en el teléfono del card)
+     c) click_email (cuando hacen click en el email del card)
+     d) click_whatsapp (cuando hacen click en el botón “Abrir WhatsApp” del bloque y cuando hacen click en el botón flotante)
+   - Params mínimos:
+     - event_category: 'contact'
+     - event_label: 'form' | 'phone' | 'email' | 'whatsapp'
+     - value: 1
+
+4) Hacer “clickables” los canales para medirlos:
+   - Teléfono: convertir a <a href="tel:+34644494617">…</a> manteniendo el mismo look.
+   - Email: convertir a <a href="mailto:proyectos@romidesbroces.com">…</a> manteniendo el mismo look.
+   - WhatsApp: asegurar que el link vaya a wa.me con el número y un texto opcional pre-rellenado (ej: “Hola, quiero un presupuesto…”), manteniendo el mismo look.
+
+5) Instrumentación limpia:
+   - Añade atributos data-track para identificar elementos:
+     - data-track="phone"
+     - data-track="email"
+     - data-track="whatsapp"
+     - data-track="form"
+   - Usa listeners por delegación o directos, pero evita duplicar eventos (si hay dos botones WhatsApp, ambos deben trackear).
+   - No añadas librerías nuevas salvo que sea imprescindible.
+
+Entrega:
+- Localiza y menciona exactamente qué archivos tocaste.
+- Pega el código final (o los diffs) de:
+  1) la página /gracias
+  2) el código donde implementas track() y los listeners
+  3) el cambio del submit del formulario para redirigir a /gracias tras éxito
+- Asegura que si no existe gtag/dataLayer no reviente nada.

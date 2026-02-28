@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -6,9 +7,11 @@ import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Phone, Mail, MessageCircle } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+import { trackPhone, trackEmail, trackWhatsApp, trackFormSubmit } from "@/lib/tracking";
 
 export default function ContactSection() {
   const { toast } = useToast();
+  const [, navigate] = useLocation();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -23,9 +26,8 @@ export default function ContactSection() {
 
     try {
       const webhookUrl = import.meta.env.VITE_WEBHOOK_URL;
-      
+
       if (webhookUrl) {
-        // Enviar datos al webhook
         const response = await fetch(webhookUrl, {
           method: 'POST',
           headers: {
@@ -44,22 +46,13 @@ export default function ContactSection() {
         if (!response.ok) {
           throw new Error('Error al enviar la solicitud');
         }
-
-        toast({
-          title: "Solicitud enviada correctamente",
-          description: "Nos pondremos en contacto contigo pronto para preparar tu propuesta.",
-        });
       } else {
-        // Si no hay webhook configurado, solo mostrar mensaje
         console.log("Form submitted:", formData);
-        toast({
-          title: "Solicitud registrada",
-          description: "Nos pondremos en contacto contigo pronto para preparar tu propuesta.",
-        });
       }
 
-      // Limpiar formulario
       setFormData({ name: "", email: "", phone: "", message: "" });
+      trackFormSubmit();
+      navigate("/gracias");
     } catch (error) {
       console.error('Error al enviar formulario:', error);
       toast({
@@ -76,7 +69,7 @@ export default function ContactSection() {
     <section id="contacto" className="py-16 sm:py-24 bg-accent/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4" data-testid="text-contact-title">
+          <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
             Solicita tu presupuesto sin compromiso
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -85,13 +78,12 @@ export default function ContactSection() {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          {/* Contact Form */}
           <Card>
             <CardHeader>
               <CardTitle>Formulario de contacto</CardTitle>
             </CardHeader>
             <CardContent>
-              <form onSubmit={handleSubmit} className="space-y-6">
+              <form onSubmit={handleSubmit} className="space-y-6" data-track="form">
                 <div>
                   <Label htmlFor="name">Nombre</Label>
                   <Input
@@ -101,7 +93,6 @@ export default function ContactSection() {
                     placeholder="Tu nombre"
                     required
                     disabled={isSubmitting}
-                    data-testid="input-name"
                   />
                 </div>
                 <div>
@@ -114,7 +105,6 @@ export default function ContactSection() {
                     placeholder="tu@email.com"
                     required
                     disabled={isSubmitting}
-                    data-testid="input-email"
                   />
                 </div>
                 <div>
@@ -127,7 +117,6 @@ export default function ContactSection() {
                     placeholder="600 123 456"
                     required
                     disabled={isSubmitting}
-                    data-testid="input-phone"
                   />
                 </div>
                 <div>
@@ -140,14 +129,12 @@ export default function ContactSection() {
                     rows={5}
                     required
                     disabled={isSubmitting}
-                    data-testid="input-message"
                   />
                 </div>
-                <Button 
-                  type="submit" 
-                  className="w-full" 
+                <Button
+                  type="submit"
+                  className="w-full"
                   disabled={isSubmitting}
-                  data-testid="button-submit-contact"
                 >
                   {isSubmitting ? "Enviando..." : "Solicitar propuesta"}
                 </Button>
@@ -155,7 +142,6 @@ export default function ContactSection() {
             </CardContent>
           </Card>
 
-          {/* Contact Info */}
           <div className="space-y-6">
             <Card className="hover-elevate">
               <CardContent className="pt-6">
@@ -164,11 +150,12 @@ export default function ContactSection() {
                     <Phone className="h-6 w-6 text-primary" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold mb-1" data-testid="text-phone-title">Teléfono</h3>
-                    <a 
-                      href="tel:+34644494617" 
+                    <h3 className="text-lg font-semibold mb-1">Teléfono</h3>
+                    <a
+                      href="tel:+34644494617"
                       className="text-muted-foreground hover:text-primary transition-colors"
-                      data-testid="link-phone"
+                      data-track="phone"
+                      onClick={trackPhone}
                     >
                       +34 644 49 46 17
                     </a>
@@ -187,11 +174,12 @@ export default function ContactSection() {
                     <Mail className="h-6 w-6 text-primary" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold mb-1" data-testid="text-email-title">Email</h3>
-                    <a 
-                      href="mailto:proyectos@romidesbroces.com" 
+                    <h3 className="text-lg font-semibold mb-1">Email</h3>
+                    <a
+                      href="mailto:proyectos@romidesbroces.com"
                       className="text-muted-foreground hover:text-primary transition-colors"
-                      data-testid="link-email"
+                      data-track="email"
+                      onClick={trackEmail}
                     >
                       proyectos@romidesbroces.com
                     </a>
@@ -210,19 +198,20 @@ export default function ContactSection() {
                     <MessageCircle className="h-6 w-6" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold mb-2" data-testid="text-whatsapp-title">WhatsApp</h3>
+                    <h3 className="text-lg font-semibold mb-2">WhatsApp</h3>
                     <p className="mb-3 text-primary-foreground/90">
                       Contacta directamente por WhatsApp para consultas urgentes
                     </p>
-                    <Button 
+                    <Button
                       variant="secondary"
                       asChild
-                      data-testid="button-whatsapp"
                     >
-                      <a 
-                        href="https://wa.me/34644494617" 
-                        target="_blank" 
+                      <a
+                        href="https://wa.me/34644494617?text=Hola%2C%20quiero%20un%20presupuesto%20de%20desbroce"
+                        target="_blank"
                         rel="noopener noreferrer"
+                        data-track="whatsapp"
+                        onClick={trackWhatsApp}
                       >
                         Abrir WhatsApp
                       </a>
