@@ -173,7 +173,7 @@ export default function ContactSection() {
                       +34 644 49 46 17
                     </a>
                     <p className="text-sm text-muted-foreground mt-2">
-                      Horario: Lunes a Domingo 8:00 - 18:00
+                      Disponible todos los días
                     </p>
                   </div>
                 </div>
