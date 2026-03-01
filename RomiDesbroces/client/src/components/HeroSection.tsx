@@ -29,7 +29,7 @@ export default function HeroSection() {
         </h1>
         
         <p className="text-lg sm:text-xl md:text-2xl text-white/95 mb-8 leading-snug max-w-3xl mx-auto font-medium">
-          Cunetas, márgenes, caminos y zonas industriales
+          Cunetas, márgenes, caminos y todo tipo de terrenos
         </p>
 
         <div className="flex flex-col items-center gap-3 mb-10 sm:mb-12">
