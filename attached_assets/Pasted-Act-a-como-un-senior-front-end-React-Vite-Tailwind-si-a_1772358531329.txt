@@ -1,0 +1,44 @@
+Actúa como un senior front-end (React/Vite + Tailwind si aplica) y optimiza la HERO section (la parte inicial “Desbroce de carreteras y tratamiento con herbicida”) para móvil y desktop, enfocada a conversión B2B/B2G (diputaciones, ayuntamientos, empresas de conservación).
+
+OBJETIVO
+- Aumentar conversión a “Solicitar presupuesto” y “Llamar”
+- Mejorar legibilidad y jerarquía visual en móvil (escaneo en 3–5s)
+- Mantener el look&feel actual (colores, imagen de tractor, marca Romi)
+
+CAMBIOS DE COPY (aplícalos tal cual)
+1) Título (H1):
+"Desbroce y control de vegetación para carreteras seguras"
+
+2) Subtítulo (2 líneas máx, más corto):
+"Mantenimiento de cunetas, arcenes y márgenes.
+Tratamientos autorizados con personal certificado."
+
+3) Bullets (máx 3, con icono check o similar):
+"Seguridad en vía y señalización"
+"Documentación técnica incluida"
+"Trazabilidad del tratamiento"
+
+4) CTA principal (botón):
+Cambiar texto de "Pide presupuesto" a "Solicitar presupuesto técnico"
+Añadir debajo del botón un microcopy pequeño:
+"Respuesta en menos de 24h"
+
+5) CTA secundario (llamar):
+Mantener “Llámanos” pero que sea estilo outline/ghost (sin competir con el botón principal).
+En móvil, colócalo debajo del CTA principal.
+
+DISEÑO / UI
+- Asegura contraste: añade un overlay oscuro sobre la imagen de fondo (ej. rgba(0,0,0,0.45) o gradiente) para que el texto sea siempre legible.
+- Ajusta tamaños: H1 grande, subtítulo menor, bullets pequeños pero legibles.
+- Reduce el bloque del logo grande en la HERO: si actualmente hay un recuadro blanco enorme con el logo, hazlo más pequeño o muévelo arriba como marca (sin tapar el mensaje).
+- Espaciado y alineación: centrado en móvil, en desktop puede ir centrado o alineado a izquierda (elige lo que se vea más profesional).
+- Mantén el botón WhatsApp flotante, pero evita que tape el CTA si ocurre (ajusta z-index/margins si hace falta).
+
+IMPLEMENTACIÓN
+- Identifica el componente / sección de la HERO (página Home o equivalente) y aplica los cambios en el código.
+- No rompas el layout existente ni el menú hamburguesa.
+- Revisa responsive: iPhone (375px), iPhone grande (430px), tablet (768px), desktop (>=1024px).
+- Si hay CSS inline o estilos dispersos, refactoriza a clases claras (sin sobreingeniería).
+
+ENTREGA
+- Devuélveme: (1) qué archivos tocaste, (2) el diff o el código final del componente HERO, (3) una captura mental describiendo cómo queda en móvil y desktop.
