@@ -42,7 +42,8 @@ export default function ServicesSection() {
             Nuestros servicios
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Especializados en desbroce de carreteras y tratamientos con herbicida
+            Especializados en desbroce de carreteras y tratamientos con herbicida.
+            También trabajamos con administraciones cumpliendo requisitos técnicos y de seguridad.
           </p>
         </div>
 

@@ -34,8 +34,9 @@ export default function HeroSection() {
 
         <div className="flex flex-col items-center gap-3 mb-10 sm:mb-12">
           {[
-            "Seguridad en vía y señalización",
-            "Documentación técnica incluida"
+            "Para fincas, caminos y parcelas",
+            "Nos encargamos de todo",
+            "Presupuesto rápido y sin compromiso"
           ].map((text, i) => (
             <div key={i} className="flex items-center gap-2 text-white/90 text-sm sm:text-base bg-black/20 backdrop-blur-sm px-4 py-1.5 rounded-full border border-white/10">
               <Check className="h-4 w-4 text-primary" />
