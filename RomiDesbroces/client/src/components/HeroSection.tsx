@@ -63,7 +63,7 @@ export default function HeroSection() {
           >
             <a href="tel:+34644494617">
               <Phone className="h-5 w-5 mr-2" />
-              Llámanos
+              ¿Prefieres hablar directamente?
             </a>
           </Button>
         </div>
