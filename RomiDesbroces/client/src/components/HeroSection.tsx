@@ -24,7 +24,7 @@ export default function HeroSection() {
       </div>
 
       <div className="relative z-10 w-full max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 text-center">
-        <h1 className="hero-title text-white mb-6 drop-shadow-md">
+        <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-6 leading-tight drop-shadow-md">
           Desbroce y control de vegetación
         </h1>
         
