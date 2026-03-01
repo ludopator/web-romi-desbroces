@@ -73,7 +73,7 @@ export default function CoverageSection() {
         </div>
 
         <div className="mt-10 flex flex-wrap justify-center gap-3">
-          {["Ciudad Real", "Toledo", "Cuenca", "Albacete", "Jaén"].map((prov) => (
+          {["Ciudad Real", "Toledo", "Cuenca", "Albacete", "Guadalajara"].map((prov) => (
             <span
               key={prov}
               className="px-5 py-2 bg-accent rounded-md text-sm font-medium text-foreground"
