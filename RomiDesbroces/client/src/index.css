@@ -297,6 +297,12 @@
     hyphens: auto;
   }
 
+  .hero-title::before,
+  .hero-title::after {
+    content: none !important;
+    display: none !important;
+  }
+
   .hero-subtitle {
     font-size: clamp(1rem, 2.5vw + 0.25rem, 1.5rem);
     font-weight: 400;
