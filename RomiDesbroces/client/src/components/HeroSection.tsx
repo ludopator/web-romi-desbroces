@@ -36,10 +36,10 @@ export default function HeroSection() {
           Desbroce y control de vegetación para carreteras seguras
         </h1>
         
-        <p className="text-lg sm:text-xl md:text-2xl text-white/95 mb-8 leading-snug max-w-2xl mx-auto font-medium">
-          Mantenimiento de cunetas, arcenes y márgenes.
-          <br className="hidden sm:block" />
-          Tratamientos autorizados con personal certificado.
+        <p className="text-lg sm:text-xl md:text-2xl text-white/95 mb-8 leading-snug max-w-3xl mx-auto font-medium">
+          Mantenimiento de cunetas, arcenes y márgenes
+          <br />
+          y otros terrenos como fincas, caminos o zonas industriales
         </p>
 
         <div className="flex flex-col items-center gap-3 mb-10 sm:mb-12">
