@@ -19,7 +19,7 @@ const services = [
   },
   {
     icon: Trees,
-    title: "Otros trabajos",
+    title: "Otros terrenos",
     description:
       "Desbroce de fincas, parcelas y caminos rurales. Poda de árboles y limpieza de terrenos.",
     principal: false,
